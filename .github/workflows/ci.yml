@@ -1,0 +1,30 @@
+name: Storage regression
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  qemu:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends make gcc-riscv64-unknown-elf binutils-riscv64-unknown-elf qemu-system-misc python3
+      - name: Build and user smoke
+        run: make run
+      - name: Storage and runner regressions
+        run: |
+          make test
+          python3 scripts/test_runner.py
+      - name: Cache benchmark
+        run: make benchmark
+      - name: Preserve output
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qemu-results
+          path: |
+            build/*.log
+            build/*.json

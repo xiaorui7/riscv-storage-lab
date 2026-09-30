@@ -1,0 +1,11 @@
+make: Entering directory '/tmp/original-src/usr'
+riscv64-unknown-elf-gcc -Wall -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64g -mabi=lp64d -ffreestanding -fno-common -nostdlib -mno-relax -fno-asynchronous-unwind-tables -I. -DUMODE   -c -o io.o io.c
+riscv64-unknown-elf-gcc -Wall -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64g -mabi=lp64d -ffreestanding -fno-common -nostdlib -mno-relax -fno-asynchronous-unwind-tables -I. -DUMODE   -c -o string.o string.c
+riscv64-unknown-elf-gcc    -c -o syscall.o syscall.S
+riscv64-unknown-elf-gcc -Wall -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64g -mabi=lp64d -ffreestanding -fno-common -nostdlib -mno-relax -fno-asynchronous-unwind-tables -I. -DUMODE   -c -o heap.o heap.c
+riscv64-unknown-elf-as   -o start.o start.s
+riscv64-unknown-elf-gcc -Wall -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64g -mabi=lp64d -ffreestanding -fno-common -nostdlib -mno-relax -fno-asynchronous-unwind-tables -I. -DUMODE   -c -o hello.o hello.c
+mkdir bin
+mkdir: cannot create directory 'bin': File exists
+make: *** [Makefile:82: bin] Error 1
+make: Leaving directory '/tmp/original-src/usr'

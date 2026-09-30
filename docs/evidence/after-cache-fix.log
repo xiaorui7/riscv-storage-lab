@@ -1,0 +1,24 @@
+make: Entering directory '/work/src/sys'
+riscv64-unknown-elf-gcc  -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I. -MMD -MP -c -o ../../build/kernel/cache.o cache.c
+riscv64-unknown-elf-gcc  -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I. -MMD -MP -c -o ../../build/kernel/ktfs.o ktfs.c
+riscv64-unknown-elf-gcc -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I. -MMD -MP -c -o ../../build/kernel/storage_test.o test/storage_test.c
+riscv64-unknown-elf-ld -melf64lriscv -T kernel.ld -o ../../build/kernel/storage-test.elf ../../build/kernel/assert.o ../../build/kernel/console.o ../../build/kernel/cache.o ../../build/kernel/thread.o ../../build/kernel/device.o ../../build/kernel/elf.o ../../build/kernel/error.o ../../build/kernel/excp.o ../../build/kernel/heap0.o ../../build/kernel/intr.o ../../build/kernel/io.o ../../build/kernel/plic.o ../../build/kernel/see.o ../../build/kernel/start.o ../../build/kernel/string.o ../../build/kernel/timer.o ../../build/kernel/trap.o ../../build/kernel/ktfs.o ../../build/kernel/thrasm.o ../../build/kernel/dev/viorng.o ../../build/kernel/dev/virtio.o ../../build/kernel/dev/vioblk.o ../../build/kernel/dev/rtc.o ../../build/kernel/dev/uart.o ../../build/kernel/memory.o ../../build/kernel/process.o ../../build/kernel/syscall.o ../../build/kernel/storage_test.o ../../build/kernel/blob.o
+make: Leaving directory '/work/src/sys'
+Created /work/build/qemu-lqwvppcq/disk.raw: 8388608 bytes, 0 files
+ERROR: Kernel reported a failure
+           RAM: [0x80000000,0x80800000): 8 MB
+  Kernel image: [0x80000000,0x80032d70)
+Heap allocator: [0x80032d70,0x80033000): 0 KB free
+RISC-V Storage Systems Lab
+[PASS] cache_hit_miss
+[PASS] cache_invalid
+[PASS] cache_shared_dirty
+[PASS] cache_pinned_full
+[PASS] cache_lru
+[PASS] cache_read_failure
+[PASS] cache_short_read
+[PASS] cache_short_write
+[PASS] cache_flush_retry
+[PASS] cache_pinned_flush
+[PASS] cache_stats_lifetime
+[FAIL] io_reference_ownership line 234: iorefcnt(&mock.io) == 1 && mock.closes == 0

@@ -1,0 +1,5 @@
+           RAM: [0x80000000,0x80800000): 8 MB
+  Kernel image: [0x80000000,0x8001d0b0)
+Heap allocator: [0x8001d0b0,0x8001e000): 3 KB free
+PANIC excp.c:88: Store access fault at 0x8000eae4 for 0x10000101 in S mode
+

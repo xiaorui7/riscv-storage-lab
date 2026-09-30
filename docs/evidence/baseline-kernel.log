@@ -1,0 +1,23 @@
+make: Entering directory '/tmp/original-src/sys'
+riscv64-unknown-elf-gcc -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I.   -c -o assert.o assert.c
+riscv64-unknown-elf-gcc -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I.   -c -o console.o console.c
+riscv64-unknown-elf-gcc -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I.   -c -o cache.o cache.c
+riscv64-unknown-elf-gcc -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I.   -c -o thread.o thread.c
+riscv64-unknown-elf-gcc -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I.   -c -o device.o device.c
+riscv64-unknown-elf-gcc -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I.   -c -o elf.o elf.c
+riscv64-unknown-elf-gcc -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I.   -c -o error.o error.c
+riscv64-unknown-elf-gcc -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I.   -c -o excp.o excp.c
+riscv64-unknown-elf-gcc -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I.   -c -o heap0.o heap0.c
+riscv64-unknown-elf-gcc -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I.   -c -o intr.o intr.c
+riscv64-unknown-elf-gcc -Wall -Werror=implicit-function-declaration -fno-omit-frame-pointer -ggdb3 -gdwarf-2 -mcmodel=medany -fno-pie -no-pie -march=rv64imazicsr -mabi=lp64 -fno-common -nostdlib -mno-relax -ffreestanding  -fno-asynchronous-unwind-tables -mno-riscv-attribute -I.   -c -o io.o io.c
+io.c: In function 'pipe_read':
+io.c:561:55: error: 'PIPE_BUF' undeclared (first use in this function)
+  561 |         ((char*)buf)[count++] = p->buffer[p->head++ % PIPE_BUF];
+      |                                                       ^~~~~~~~
+io.c:561:55: note: each undeclared identifier is reported only once for each function it appears in
+io.c: In function 'pipe_write':
+io.c:576:32: error: 'PIPE_BUF' undeclared (first use in this function)
+  576 |         while ((p->tail + 1) % PIPE_BUF == p->head % PIPE_BUF) {
+      |                                ^~~~~~~~
+make: *** [<builtin>: io.o] Error 1
+make: Leaving directory '/tmp/original-src/sys'

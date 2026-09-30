@@ -1,0 +1,37 @@
+{
+  "mode": "benchmark",
+  "passed": [],
+  "benchmark": [
+    {
+      "operations": 1024,
+      "hits": 0,
+      "misses": 1024,
+      "evictions": 960,
+      "backing_reads": 1024,
+      "backing_writes": 0,
+      "workload": "sequential",
+      "hit_rate": 0.0
+    },
+    {
+      "operations": 1024,
+      "hits": 1016,
+      "misses": 8,
+      "evictions": 0,
+      "backing_reads": 8,
+      "backing_writes": 0,
+      "workload": "hot_set",
+      "hit_rate": 0.9921875
+    },
+    {
+      "operations": 1024,
+      "hits": 497,
+      "misses": 527,
+      "evictions": 463,
+      "backing_reads": 527,
+      "backing_writes": 0,
+      "workload": "random",
+      "hit_rate": 0.4853515625
+    }
+  ],
+  "qemu": "QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.18)"
+}

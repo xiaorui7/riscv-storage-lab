@@ -1,0 +1,8 @@
+{
+  "mode": "smoke",
+  "passed": [
+    "user_exec_print"
+  ],
+  "benchmark": [],
+  "qemu": "QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.18)"
+}

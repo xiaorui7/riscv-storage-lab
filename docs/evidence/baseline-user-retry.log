@@ -1,0 +1,3 @@
+make: Entering directory '/tmp/original-src/usr'
+riscv64-unknown-elf-ld -T umode.ld -o bin/hello io.o string.o syscall.o heap.o start.o hello.o
+make: Leaving directory '/tmp/original-src/usr'

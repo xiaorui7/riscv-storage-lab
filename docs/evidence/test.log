@@ -1,0 +1,25 @@
+           RAM: [0x80000000,0x80800000): 8 MB
+  Kernel image: [0x80000000,0x80032d70)
+Heap allocator: [0x80032d70,0x80033000): 0 KB free
+RISC-V Storage Systems Lab
+[PASS] cache_hit_miss
+[PASS] cache_invalid
+[PASS] cache_shared_dirty
+[PASS] cache_pinned_full
+[PASS] cache_lru
+[PASS] cache_read_failure
+[PASS] cache_short_read
+[PASS] cache_short_write
+[PASS] cache_flush_retry
+[PASS] cache_pinned_flush
+[PASS] cache_stats_lifetime
+[PASS] io_reference_ownership
+[PASS] ktfs_create
+[PASS] ktfs_duplicate_open
+[PASS] ktfs_extend
+[PASS] ktfs_cross_block
+[PASS] ktfs_eof_zero
+[PASS] ktfs_reopen
+[PASS] ktfs_delete
+[PASS] ktfs_empty_recreate
+[DONE] test 20

@@ -1,0 +1,27 @@
+{
+  "mode": "test",
+  "passed": [
+    "cache_hit_miss",
+    "cache_invalid",
+    "cache_shared_dirty",
+    "cache_pinned_full",
+    "cache_lru",
+    "cache_read_failure",
+    "cache_short_read",
+    "cache_short_write",
+    "cache_flush_retry",
+    "cache_pinned_flush",
+    "cache_stats_lifetime",
+    "io_reference_ownership",
+    "ktfs_create",
+    "ktfs_duplicate_open",
+    "ktfs_extend",
+    "ktfs_cross_block",
+    "ktfs_eof_zero",
+    "ktfs_reopen",
+    "ktfs_delete",
+    "ktfs_empty_recreate"
+  ],
+  "benchmark": [],
+  "qemu": "QEMU emulator version 8.2.2 (Debian 1:8.2.2+ds-0ubuntu1.18)"
+}
