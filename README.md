@@ -101,8 +101,8 @@ interpret them.
 - Fixed cache consistency, short-transfer handling and failed victim replacement.
 - Fixed seek-wrapper reference ownership and creation in an empty KTFS directory.
 - Added focused tests, cache instrumentation, deterministic workloads and docs.
-- Added a GitHub Actions workflow using the same local commands. Remote CI has
-  not been executed from this checkout.
+- Added a GitHub Actions workflow using the same local commands; the first
+  [remote build, tests and benchmark passed](https://github.com/xiaorui7/riscv-storage-lab/actions/runs/36779180642).
 
 Details: [AUDIT.md](docs/AUDIT.md), [CHANGES.md](docs/CHANGES.md),
 [TESTING.md](docs/TESTING.md).

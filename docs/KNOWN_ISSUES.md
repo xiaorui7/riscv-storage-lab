@@ -21,6 +21,7 @@ benchmark pass. The following limits remain outside this focused upgrade.
 | P2 | No crash-consistency/stable-media flush guarantee | Cache flush is not a journal or a hardware durability barrier |
 | P3 | Unrelated commented code and duplicate includes remain | Kept to avoid large unrelated changes to course code |
 
-No P0 blocker remains in the documented workflow. CI configuration is provided
-but has not been run remotely. The supplied checkout has no Git history; original
-personal contribution attribution must come from the project authors.
+No P0 blocker remains in the documented workflow. The first remote GitHub Actions
+build, tests and benchmark passed (run 36779180642). The supplied coursework had
+no Git history; original personal contribution attribution must come from the
+project authors.

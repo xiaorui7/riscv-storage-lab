@@ -29,3 +29,8 @@ runner exit status: 1
 
 The source suite verifies reopen within one boot; it is not a crash-recovery or
 power-failure test. All results are bounded to the environment in BUILD.md.
+
+GitHub Actions independently passed toolchain installation, source build, user
+smoke, storage/runner regressions and benchmark on Ubuntu 24.04 for commit
+`02730fde422e9da8296f537bcf769a1d6557f981`:
+[remote run 36779180642](https://github.com/xiaorui7/riscv-storage-lab/actions/runs/36779180642).

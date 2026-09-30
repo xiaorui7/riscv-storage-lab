@@ -23,8 +23,8 @@ accurately, including any assisted implementation, when asked.
 - Added per-cache statistics and lifecycle handling with regression tests.
 - Added deterministic QEMU tests, bounded orchestration, logs, JSON results and
   reproducible cache workloads on real VirtIO-backed I/O.
-- Documented ownership, design tradeoffs and remaining limits; supplied optional
-  CI configuration (remote execution not yet verified).
+- Documented ownership, design tradeoffs and remaining limits; added GitHub
+  Actions CI with a successful remote build, tests and benchmark run.
 
 Possible resume wording, subject to your actual participation and understanding:
 
