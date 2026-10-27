@@ -5,7 +5,6 @@ __pycache__/
 /src/sys/dev/*.o
 /src/sys/*.elf
 /src/usr/*.o
-/GPT-review/
 /src/sys/ktfs.raw
 /src/usr/bin/
 /src/util/fs/

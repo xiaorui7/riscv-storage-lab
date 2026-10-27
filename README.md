@@ -19,7 +19,7 @@ to have newly implemented the entire OS.
 - Bounded Python test runner that rejects missing, duplicate or failing markers,
   panics, timeouts and unsuccessful QEMU exits.
 
-See [measured evidence](docs/evidence/) and [ownership / resume notes](docs/RESUME_NOTES.md).
+See [measured evidence](docs/evidence/).
 
 ## Build and run
 

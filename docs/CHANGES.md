@@ -21,7 +21,7 @@ not a reconstructed history of individual course contributions.
    and adds precise cache fault injection, 20 cases total, plus three real
    VirtIO-backed read benchmarks. `scripts/run_tests.py` builds, bounds QEMU,
    parses strict markers and saves logs/JSON. Host checks test rejection paths.
-5. **Presentation:** README, design/build/testing/benchmark/known-issue/resume
+5. **Presentation:** README, design/build/testing/benchmark/known-issue
    documents and preserved execution evidence. Optional CI reuses local commands.
 
 Regression mapping: compiler smoke covers the pipe-size/startup changes;

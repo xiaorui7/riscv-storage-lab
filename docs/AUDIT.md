@@ -8,8 +8,7 @@ below refer to the original repository unless explicitly marked as new work.
 ## A. Build environment
 
 - Host: Windows with Docker Desktop / Linux x86-64; no native GNU Make,
-  RISC-V compiler, or QEMU on PATH. The development container supplies Linux;
-  containers are not an OS feature or a resume claim.
+  RISC-V compiler, or QEMU on PATH. The development container supplies Linux.
 - Actually installed and exercised: Ubuntu 24.04 packages
   `make`, `gcc-riscv64-unknown-elf`, `binutils-riscv64-unknown-elf`,
   `qemu-system-misc`, `python3`. GCC reports 13.2.0; QEMU reports 8.2.2.
@@ -91,7 +90,7 @@ Both original normal and KTFS-test kernels faulted at the absent UART address.
 
 This is a full-repository inventory and targeted code audit, not a claim that
 every instruction or error path has been verified. Later validation and remaining
-limits will be reported in BUILD, BENCHMARK and RESUME_NOTES rather than changing
+limits will be reported in BUILD and BENCHMARK rather than changing
 these baseline results into retroactive passes.
 
 Final acceptance: a clean `build/` rebuild, user smoke, all 20 storage cases,
