@@ -104,7 +104,7 @@ interpret them.
 - Added a GitHub Actions workflow using the same local commands; the first
   [remote build, tests and benchmark passed](https://github.com/xiaorui7/riscv-storage-lab/actions/runs/36779180642).
 
-Details: [AUDIT.md](docs/AUDIT.md), [CHANGES.md](docs/CHANGES.md),
+Details: [CHANGES.md](docs/CHANGES.md),
 [TESTING.md](docs/TESTING.md).
 
 ## Limitations and provenance

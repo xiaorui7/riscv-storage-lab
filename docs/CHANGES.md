@@ -5,7 +5,7 @@ into the following reviewable groups. The supplied directory had no repository
 history; the GitHub repository starts with the validated engineering revision,
 not a reconstructed history of individual course contributions.
 
-1. **Baseline and reproducibility:** `docs/AUDIT.md`, root `Makefile`, out-of-tree
+1. **Build and reproducibility:** root `Makefile`, out-of-tree
    targets in the existing Makefiles, source fixture builder, smoke program.
    Fixed missing freestanding pipe capacity and removed unsupported/duplicate
    UART startup from the active main path. The baseline remains documented as
